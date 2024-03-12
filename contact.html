@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">
+        <img src="/images/header-deconinck.png" alt="" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/new.html">Nouveatés</a></li>
+          <li><a href="/classic.html">Nos classiques</a></li>
+          <li><a href="/contact.html">Contact & Plan d'accès</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contact">
+      <h1>Contact & Plan d'accès</h1>
+      <form action="form.php" method="post">
+        <fieldset id="coordonnees">
+          <legend>Vos coordonnées</legend>
+          <p>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" />
+          </p>
+          <p>
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="nom" />
+          </p>
+          <p>
+            <label for="tel">Téléphone:</label>
+            <input type="text" id="tel" name="nom" />
+          </p>
+          <p>
+            <label for="email">Mail:</label>
+            <input type="email" id="email" name="nom" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Votre question</legend>
+          <textarea name="message" id="message" rows="10"></textarea>
+        </fieldset>
+        <button type="submit">Envoyer</button>
+      </form>
+      <p>
+        Deconinck Wine and Spirit - Rue Lahaut 8 - 1380 Genappe - Tel
+        02/658.26.15
+      </p>
+      <figure>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2526.3144852778864!2d4.3825797023139215!3d50.71410454134323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sbe!4v1710257608472!5m2!1sfr!2sbe"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </figure>
+    </main>
+    <footer>
+      <p>
+        Deconinck Wine and Spirit - Rue Lahaut 8 - 1380 Genappe - Tel
+        02/658.26.15
+      </p>
+      <a href="">Mention Légales</a>
+    </footer>
+  </body>
+</html>
