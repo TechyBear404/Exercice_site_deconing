@@ -14,7 +14,7 @@
           <img src="/images/header-deconinck.png" alt="" />
         </figure>
       </a>
-      <nav>
+      <nav role="navigation">
         <ul>
           <li><a href="/new.html">Nouveatés</a></li>
           <li><a href="/classic.html">Nos classiques</a></li>
@@ -22,31 +22,31 @@
         </ul>
       </nav>
     </header>
-    <main id="contact">
+    <main id="contact" role="main">
       <h1>Contact & Plan d'accès</h1>
       <form action="form.php" method="post">
         <fieldset id="coordonnees">
           <legend>Vos coordonnées</legend>
           <p>
             <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" />
+            <input type="text" id="nom" name="nom" required />
           </p>
           <p>
             <label for="prenom">Prénom:</label>
-            <input type="text" id="prenom" name="nom" />
+            <input type="text" id="prenom" name="nom" required />
           </p>
           <p>
             <label for="tel">Téléphone:</label>
-            <input type="text" id="tel" name="nom" />
+            <input type="tel" id="tel" name="nom" required />
           </p>
           <p>
             <label for="email">Mail:</label>
-            <input type="email" id="email" name="nom" />
+            <input type="email" id="email" name="nom" required />
           </p>
         </fieldset>
         <fieldset>
           <legend>Votre question</legend>
-          <textarea name="message" id="message" rows="10"></textarea>
+          <textarea name="message" id="message" rows="10" required></textarea>
         </fieldset>
         <button type="submit">Envoyer</button>
       </form>
@@ -62,7 +62,8 @@
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </figure>
     </main>
     <footer>
